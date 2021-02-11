@@ -1,6 +1,6 @@
 #pragma once
 
-#include "third_party/json/include/nlohmann/json.hpp"
+#include <nlohmann/json.hpp>
 #include <string>
 
 const bool JSON_PARSE_NO_THROW{false};
