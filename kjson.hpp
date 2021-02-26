@@ -3,6 +3,8 @@
 #include <nlohmann/json.hpp>
 #include <string>
 
+namespace kjson {
+
 const bool JSON_PARSE_NO_THROW{false};
 
 inline std::string GetJSONStringValue(nlohmann::json data, std::string key) {
@@ -34,3 +36,5 @@ inline bool GetJSONBoolValue(nlohmann::json data, std::string key) {
     return data[key].get<bool>();
   return "";
 }
+
+} // namespace kjson
